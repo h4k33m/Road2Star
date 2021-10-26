@@ -1,14 +1,16 @@
 --[[
- ________.__        ___.          .__     
- /  _____/|  |   ____\_ |__ _____  |  |  
-/   \  ___|  |  /  _ \| __ \\__  \ |  |   
-\    \_\  \  |_(  <_> ) \_\ \/ __ \|  |___
- \______  /____/\____/|___  (____  /____/ 
-        \/                \/     \/                                                                                                                                           
+
+                _ 
+     /\        (_)
+    /  \    _____ 
+   / /\ \  |_  / |
+  / ____ \  / /| |
+ /_/    \_\/___|_|
+                                                                                                                                                   
 --]]
 _G.SAEnabled = true
 
-local L_1_ = loadstring(game:HttpGet("https://raw.githubusercontent.com/GlobalXYZ/NotSoLegit/main/IYKYK.txt"))()
+local L_1_ = loadstring(game:HttpGet("https://raw.githubusercontent.com/azirunning/Road2Star/main/IYKYK.txt"))()
 
 local L_2_ = L_1_:AddWindow("Aki X", {
 	main_color = Color3.fromRGB(10, 10, 10),
@@ -17,7 +19,7 @@ local L_2_ = L_1_:AddWindow("Aki X", {
 	can_resize = true,
 })
 
-local L_3_ = loadstring(game:HttpGet("https://raw.githubusercontent.com/GlobalXYZ/NotSoLegit/main/So.lua"))()
+local L_3_ = loadstring(game:HttpGet("https://raw.githubusercontent.com/azirunning/Road2Star/main/So.lua"))()
 -- // Mains
 local UserInputService = game:GetService("UserInputService")
 
