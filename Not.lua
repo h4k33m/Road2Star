@@ -370,13 +370,13 @@ L_7_:BindToRenderStep("AimLock", 0, function()
 end)
 -- // Mains
 game:GetService("UserInputService").InputBegan:connect(function(input)
-if input.KeyCode == Enum.KeyCode.V then
+if input.KeyCode == Enum.KeyCode.Insert then
 _G.SAEnabled = true
 end
 end)
 --
 game:GetService("UserInputService").InputBegan:connect(function(input)
-if input.KeyCode == Enum.KeyCode.C then
+if input.KeyCode == Enum.KeyCode.Delete then
 _G.SAEnabled = false
 end
 end)
