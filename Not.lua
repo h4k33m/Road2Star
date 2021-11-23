@@ -136,116 +136,78 @@ L_19_:AddButton("Owner : Global", function(L_26_arg0)
 	})
 end)
 
-L_18_:AddButton("Fly (X)", function(L_30_arg0)
-	repeat
-		wait() 
-	until game.Players.LocalPlayer and game.Players.LocalPlayer.Character and game.Players.LocalPlayer.Character:findFirstChild("Head") and game.Players.LocalPlayer.Character:findFirstChild("Humanoid")
-	local L_31_ = game.Players.LocalPlayer:GetMouse()
-	repeat
-		wait()
-	until L_31_
-	local L_32_ = game.Players.LocalPlayer
-	local L_33_ = L_32_.Character.Head
-	local L_34_ = false
-	local L_35_ = true
-	local L_36_ = {
-		f = 0,
-		b = 0,
-		l = 0,
-		r = 0
-	}
-	local L_37_ = {
-		f = 0,
-		b = 0,
-		l = 0,
-		r = 0
-	}
-	local L_38_ = 400
-	local L_39_ = 5000
-	function G_1_()
-		local L_40_ = Instance.new("BodyGyro", L_33_)
-		L_40_.P = 9
-		L_40_.maxTorque = Vector3.new(9, 9, 9)
-		L_40_.cframe = L_33_.CFrame
-		local L_41_ = Instance.new("BodyVelocity", L_33_)
-		L_41_.velocity = Vector3.new(0, 0.1, 0)
-		L_41_.maxForce = Vector3.new(9, 9, 9)
-		repeat
-			wait()
-			L_32_.Character.Humanoid.PlatformStand = true
-			if L_36_.l + L_36_.r ~= 0 or L_36_.f + L_36_.b ~= 0 then
-				L_39_ = L_39_ + .5 + (L_39_ / L_38_)
-				if L_39_ > L_38_ then
-					L_39_ = L_38_
-				end
-			elseif not (L_36_.l + L_36_.r ~= 0 or L_36_.f + L_36_.b ~= 0) and L_39_ ~= 0 then
-				L_39_ = L_39_ - 1
-				if L_39_ < 0 then
-					L_39_ = 0
-				end
-			end
-			if (L_36_.l + L_36_.r) ~= 0 or (L_36_.f + L_36_.b) ~= 0 then
-				L_41_.velocity = ((game.Workspace.CurrentCamera.CoordinateFrame.lookVector * (L_36_.f + L_36_.b)) + ((game.Workspace.CurrentCamera.CoordinateFrame * CFrame.new(L_36_.l + L_36_.r, (L_36_.f + L_36_.b) * .2, 0).p) - game.Workspace.CurrentCamera.CoordinateFrame.p)) * L_39_
-				L_37_ = {
-					f = L_36_.f,
-					b = L_36_.b,
-					l = L_36_.l,
-					r = L_36_.r
-				}
-			elseif (L_36_.l + L_36_.r) == 0 and (L_36_.f + L_36_.b) == 0 and L_39_ ~= 0 then
-				L_41_.velocity = ((game.Workspace.CurrentCamera.CoordinateFrame.lookVector * (L_37_.f + L_37_.b)) + ((game.Workspace.CurrentCamera.CoordinateFrame * CFrame.new(L_37_.l + L_37_.r, (L_37_.f + L_37_.b) * .2, 0).p) - game.Workspace.CurrentCamera.CoordinateFrame.p)) * L_39_
-			else
-				L_41_.velocity = Vector3.new(0, 0.1, 0)
-			end
-			L_40_.cframe = game.Workspace.CurrentCamera.CoordinateFrame * CFrame.Angles(-math.rad((L_36_.f + L_36_.b) * 50 * L_39_ / L_38_), 0, 0)
-		until not L_34_
-		L_36_ = {
-			f = 0,
-			b = 0,
-			l = 0,
-			r = 0
-		}
-		L_37_ = {
-			f = 0,
-			b = 0,
-			l = 0,
-			r = 0
-		}
-		L_39_ = 0
-		L_40_:Destroy()
-		L_41_:Destroy()
-		L_32_.Character.Humanoid.PlatformStand = false
-	end
-	L_31_.KeyDown:connect(function(L_42_arg0)
-		if L_42_arg0:lower() == "x" then
-			if L_34_ then
-				L_34_ = false
-			else
-				L_34_ = true
-				Fly()
-			end
-		elseif L_42_arg0:lower() == "w" then
-			L_36_.f = 1
-		elseif L_42_arg0:lower() == "s" then
-			L_36_.b = -1
-		elseif L_42_arg0:lower() == "a" then
-			L_36_.l = -1
-		elseif L_42_arg0:lower() == "d" then
-			L_36_.r = 1
-		end
-	end)
-	L_31_.KeyUp:connect(function(L_43_arg0)
-		if L_43_arg0:lower() == "w" then
-			L_36_.f = 0
-		elseif L_43_arg0:lower() == "s" then
-			L_36_.b = 0
-		elseif L_43_arg0:lower() == "a" then
-			L_36_.l = 0
-		elseif L_43_arg0:lower() == "d" then
-			L_36_.r = 0
-		end
-	end)
-	Fly()
+L_18_:AddButton("Shit Talk (J)", function(L_30_arg0)
+    local plr = game.Players.LocalPlayer
+repeat wait() until plr.Character
+local char = plr.Character
+
+local garbage = {
+    "ur bad";
+    "sonney boy";
+    "ez";
+    "my grandma has more skill than you";
+    "seed";
+    "sit son";
+    "trash";
+    "LOL";
+    "LMAO";
+    "imagine being you right now";
+    "xd";
+    "don't try LOL";
+    "you lose";
+    "why do you even try";
+    "I didn't think being this bad was possible";
+    "leave";
+    "no skill";
+    "so sad man.";
+    "bad";
+    "you're nothing";
+    "lol";
+    "so trash";
+    "so bad";
+    "ur salty";
+    "salty";
+    "look he's mad";
+    "cry more";
+    "keep crying";
+    "cry baby";
+    "hahaha I won";
+    "no one likes u";
+    "run 1s seed";
+    "thank you for your time";
+    "you were so close!";
+    "better luck next time!";
+    "rodent";
+    "HAHA";
+    "ill 5-0";
+    "just quit";
+    "time to take out the trash";
+    "did you get worse?";
+    "I'm surprised you haven't quit yet";
+
+
+
+
+
+
+
+
+
+
+
+}
+
+
+function TrashTalk(inputObject, gameProcessedEvent)
+    if inputObject.KeyCode == Enum.KeyCode.J and gameProcessedEvent == false then        
+game.ReplicatedStorage.DefaultChatSystemChatEvents.SayMessageRequest:FireServer(
+        garbage[math.random(1,#garbage)],
+        "All"
+    )
+    end
+end
+ 
+game:GetService("UserInputService").InputBegan:connect(TrashTalk)
 end)
 
 L_18_:AddButton("Headless", function(L_44_arg0)
