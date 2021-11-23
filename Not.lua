@@ -210,10 +210,41 @@ end
 game:GetService("UserInputService").InputBegan:connect(TrashTalk)
 end)
 
-L_18_:AddButton("Headless", function(L_44_arg0)
-	local L_45_ = game.Players.LocalPlayer.Character
-	L_45_.Head.Transparency = 1
-	game.Workspace.LocalPlayer.Head.face:remove()
+L_18_:AddButton("Speed (Q)", function(L_44_arg0)
+local L_45_ = game:GetService('Players').LocalPlayer
+down = true
+ 
+function onButton1Down(mouse)
+    down = true
+    while down do
+        if not down then break end
+        local char = L_45_.Character
+        char.HumanoidRootPart.Velocity = char.HumanoidRootPart.CFrame.lookVector * 190
+        wait()
+    end
+end
+ 
+function onButton1Up(mouse)
+    down = false
+end
+ 
+function onSelected(mouse)
+    mouse.KeyDown:connect(function(q) if q:lower()=="q"then onButton1Down(mouse)end end)
+    mouse.KeyUp:connect(function(q) if q:lower()=="q"then onButton1Up(mouse)end end)
+end
+onSelected(game.Players.LocalPlayer:GetMouse())
+end)
+
+L_18_:AddButton("Rev Building (TP)", function(L_32_arg0)
+    getgenv().game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-674.19891357422, 47.272911071777, -144.78526306152, -1, 0, 0, 0, 1, 0, 0, 0, -1)
+end)
+
+L_18_:AddButton("Db Building (TP)", function(L_35_arg0)
+    getgenv().game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-1046.0380859375, 80.410621643066, -243.91618347168, -1, 0, 0, 0, 1, 0, 0, 0, -1)
+end)
+
+L_18_:AddButton("High Armor (TP)", function(L_39_arg0)
+    getgenv().game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-917.8759765625, -25.160543441772, 555.62518310547, -1, 0, 0, 0, 1, 0, 0, 0, -1)
 end)
 
 L_17_:AddSwitch("Enable ESP", function(L_46_arg0)
