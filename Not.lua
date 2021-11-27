@@ -12,8 +12,8 @@ _G.SAEnabled = true
 
 local L_1_ = loadstring(game:HttpGet("https://raw.githubusercontent.com/azirunning/Road2Star/main/IYKYK.txt"))()
 
-local L_2_ = L_1_:AddWindow("Aki X", {
-	main_color = Color3.fromRGB(10, 10, 10),
+local L_2_ = L_1_:AddWindow("Xanity", {
+	main_color = Color3.fromRGB(255, 0, 0),
 	min_size = Vector2.new(450, 500),
 	toggle_key = Enum.KeyCode.RightControl,
 	can_resize = true,
@@ -54,17 +54,17 @@ local L_10_ = L_9_:GetMouse()
 local L_11_ = L_5_.CurrentCamera
 
 local L_12_ = {
-	Background = Color3.fromRGB(24, 24, 24),
+	Background = Color3.fromRGB(0, 0, 0),
 	Glow = Color3.fromRGB(0, 0, 0),
-	Accent = Color3.fromRGB(10, 10, 10),
-	LightContrast = Color3.fromRGB(20, 20, 20),
-	DarkContrast = Color3.fromRGB(14, 14, 14),
+	Accent = Color3.fromRGB(0, 0, 0),
+	LightContrast = Color3.fromRGB(0, 0, 0),
+	DarkContrast = Color3.fromRGB(0, 0, 0),
 	TextColor = Color3.fromRGB(255, 255, 255)
 }
 
 local L_13_ = {
 	SilentAim = false,
-	AimLock = true,
+	AimLock = true, 
 	Prediction = 0.165
 }
 
