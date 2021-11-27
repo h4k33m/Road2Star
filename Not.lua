@@ -239,6 +239,18 @@ L_18_:AddButton("Rev Building (TP)", function(L_32_arg0)
     getgenv().game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-674.19891357422, 47.272911071777, -144.78526306152, -1, 0, 0, 0, 1, 0, 0, 0, -1)
 end)
 
+L_18_:AddButton("Admin Guns (TP)", function(L_32_arg0)
+    getgenv().game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-871.79370117188, -32.65198135376, -526.53021240234)
+end)
+
+L_18_:AddButton("Cheap RPG (TP)", function(L_32_arg0)
+    getgenv().game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-787.27734375, -39.65198135376, -934.00939941406)
+end)
+
+L_18_:AddButton("Food (TP)", function(L_32_arg0)
+    getgenv().game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(187.03312683105, 25.127229690552, -967.68676757813)
+end)
+
 L_18_:AddButton("Db Building (TP)", function(L_35_arg0)
     getgenv().game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-1046.0380859375, 80.410621643066, -243.91618347168, -1, 0, 0, 0, 1, 0, 0, 0, -1)
 end)
