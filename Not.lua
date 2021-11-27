@@ -184,6 +184,21 @@ local garbage = {
     "time to take out the trash";
     "did you get worse?";
     "I'm surprised you haven't quit yet";
+    "bro what you aiming at";
+    "kids mad hes bad";
+    "get airshot xd";
+    "log if you cant take it";
+    "lowkey kinda sad";
+    "get clipped lol";
+    "do a flip ahaha";
+
+
+
+
+
+
+
+
 
 
 
