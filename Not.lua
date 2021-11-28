@@ -81,8 +81,8 @@ end
 local L_15_ = Instance.new("BindableFunction")
 
 game.StarterGui:SetCore("SendNotification", {
-	Title = "Aki X";
-	Text = "Aki On Top";
+	Title = "Xanity X";
+	Text = "Xamity On Top";
 	Icon = "RBXID OR BLANK";
 	Duration = "DURATION IN SECONDS";
 	callbakc = L_15_;
@@ -107,7 +107,7 @@ L_19_:AddButton("discord.gg/Zeski", function(L_22_arg0)
 	local L_24_ = Instance.new("BindableFunction")
 	game.StarterGui:SetCore("SendNotification", {
 		Title = "Remember No Leaking";
-		Text = "Made by 0010 Gang";
+		Text = "Made by Aki";
 		Icon = "RBXID OR BLANK";
 		Duration = "DURATION IN SECONDS";
 		callbakc = L_24_;
@@ -115,8 +115,8 @@ L_19_:AddButton("discord.gg/Zeski", function(L_22_arg0)
 	})
 end)
 
-L_19_:AddButton("Owner : Global", function(L_26_arg0)
-	setclipboard("Global Was Here")
+L_19_:AddButton("Owner : Xanti", function(L_26_arg0)
+	setclipboard("Aki Was Here")
 	wait(1)
 	local function L_27_func(L_29_arg0)
 		if L_29_arg0 == "Yes" then
@@ -150,7 +150,6 @@ local garbage = {
     "sit son";
     "trash";
     "LOL";
-    "LMAO";
     "imagine being you right now";
     "xd";
     "don't try LOL";
@@ -272,6 +271,14 @@ end)
 
 L_18_:AddButton("High Armor (TP)", function(L_39_arg0)
     getgenv().game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-917.8759765625, -25.160543441772, 555.62518310547, -1, 0, 0, 0, 1, 0, 0, 0, -1)
+end)
+
+L_18_:AddButton("Mask Food(TP)", function(L_39_arg0)
+    getgenv().game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-677.11364746094, 21.997995376587, 312.50341796875, -1, 0, 0, 0, 1, 0, 0, 0, -1)
+end)
+
+L_18_:AddButton("Key (TP)", function(L_39_arg0)
+    getgenv().game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-250.18479919434, 21.747999191284, -213.42314147949, -1, 0, 0, 0, 1, 0, 0, 0, -1)
 end)
 
 L_17_:AddSwitch("Enable ESP", function(L_46_arg0)
