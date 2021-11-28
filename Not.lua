@@ -93,6 +93,7 @@ local L_16_ = L_2_:AddTab("Aimlock")
 local L_17_ = L_2_:AddTab("Esp")
 local L_18_ = L_2_:AddTab("Misc")
 local L_19_ = L_2_:AddTab("Credits")
+local L_20_ = L_2_:AddTab("FOV")
 
 L_19_:AddButton("discord.gg/Zeski", function(L_22_arg0)
 	setclipboard("https://discord.gg/Zeski")
@@ -247,6 +248,17 @@ function onSelected(mouse)
     mouse.KeyUp:connect(function(q) if q:lower()=="q"then onButton1Up(mouse)end end)
 end
 onSelected(game.Players.LocalPlayer:GetMouse())
+end)
+
+
+L_20_:AddButton("Field of View (70)", function(L_32_arg0)
+    workspace.CurrentCamera.FieldOfView = (70)
+end)
+L_20_:AddButton("Field of View (100)", function(L_32_arg0)
+    workspace.CurrentCamera.FieldOfView = (100)
+end)
+L_20_:AddButton("Field of View (120)", function(L_32_arg0)
+    workspace.CurrentCamera.FieldOfView = (120)
 end)
 
 L_18_:AddButton("Rev Building (TP)", function(L_32_arg0)
