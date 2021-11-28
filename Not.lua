@@ -92,50 +92,7 @@ game.StarterGui:SetCore("SendNotification", {
 local L_16_ = L_2_:AddTab("Aimlock")
 local L_17_ = L_2_:AddTab("Esp")
 local L_18_ = L_2_:AddTab("Misc")
-local L_19_ = L_2_:AddTab("Credits")
 local L_20_ = L_2_:AddTab("FOV")
-
-L_19_:AddButton("discord.gg/Zeski", function(L_22_arg0)
-	setclipboard("https://discord.gg/Zeski")
-	wait(1)
-	local function L_23_func(L_25_arg0)
-		if L_25_arg0 == "Yes" then
-			print("User said yes")
-		elseif L_25_arg0 == "No" then
-			print("User said no")
-		end
-	end
-	local L_24_ = Instance.new("BindableFunction")
-	game.StarterGui:SetCore("SendNotification", {
-		Title = "Remember No Leaking";
-		Text = "Made by Aki";
-		Icon = "RBXID OR BLANK";
-		Duration = "DURATION IN SECONDS";
-		callbakc = L_24_;
-		Button1 = "Okay, Thanks :)";
-	})
-end)
-
-L_19_:AddButton("Owner : Xanti", function(L_26_arg0)
-	setclipboard("Aki Was Here")
-	wait(1)
-	local function L_27_func(L_29_arg0)
-		if L_29_arg0 == "Yes" then
-			print("User said yes")
-		elseif L_29_arg0 == "No" then
-			print("User said no")
-		end
-	end
-	local L_28_ = Instance.new("BindableFunction")
-	game.StarterGui:SetCore("SendNotification", {
-		Title = "Shoutout Curry";
-		Text = "My nigga fr";
-		Icon = "RBXID OR BLANK";
-		Duration = "DURATION IN SECONDS";
-		callbakc = L_28_;
-		Button1 = "Lets get it";
-	})
-end)
 
 L_18_:AddButton("Shit Talk (J)", function(L_30_arg0)
     local plr = game.Players.LocalPlayer
