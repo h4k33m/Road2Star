@@ -94,31 +94,31 @@ local L_17_ = L_2_:AddTab("Esp")
 local L_18_ = L_2_:AddTab("Misc")
 local L_20_ = L_2_:AddTab("FOV")
 
-L_18_:AddButton("Shit Talk (End)", function(L_30_arg0)
+L_18_:AddButton("Shit Talk (J)", function(L_30_arg0)
     local plr = game.Players.LocalPlayer
 repeat wait() until plr.Character
 local char = plr.Character
 
 local garbage = {
-    "this all u got";
-    "bros my son";
+    "ur bad";
+    "sonney boy";
     "ez";
-    "my dog has more skill";
+    "my grandma has more skill than you";
     "seed";
     "sit son";
     "trash";
     "LOL";
-    "pls try";
+    "imagine being you right now";
     "xd";
     "don't try LOL";
     "you lose";
     "why do you even try";
-    "how you miss me";
+    "I didn't think being this bad was possible";
     "leave";
     "no skill";
     "so sad man.";
     "bad";
-    "no aim xd";
+    "you're nothing";
     "lol";
     "so trash";
     "so bad";
@@ -132,14 +132,14 @@ local garbage = {
     "no one likes u";
     "run 1s seed";
     "thank you for your time";
-    "you almost had me";
-    "try harder next time";
+    "you were so close!";
+    "better luck next time!";
     "rodent";
     "HAHA";
     "ill 5-0";
     "just quit";
-    "bro got tossed";
-    "werent you better";
+    "time to take out the trash";
+    "did you get worse?";
     "I'm surprised you haven't quit yet";
     "bro what you aiming at";
     "kids mad hes bad";
@@ -171,7 +171,7 @@ local garbage = {
 
 
 function TrashTalk(inputObject, gameProcessedEvent)
-    if inputObject.KeyCode == Enum.KeyCode.End and gameProcessedEvent == false then        
+    if inputObject.KeyCode == Enum.KeyCode.J and gameProcessedEvent == false then        
 game.ReplicatedStorage.DefaultChatSystemChatEvents.SayMessageRequest:FireServer(
         garbage[math.random(1,#garbage)],
         "All"
