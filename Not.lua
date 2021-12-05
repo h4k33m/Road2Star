@@ -91,34 +91,35 @@ game.StarterGui:SetCore("SendNotification", {
 
 local L_16_ = L_2_:AddTab("Aimlock")
 local L_17_ = L_2_:AddTab("Esp")
-local L_18_ = L_2_:AddTab("Misc")
+local L_18_ = L_2_:AddTab("TPS")
 local L_20_ = L_2_:AddTab("FOV")
+local L_21_ = L_2_:AddTab("Extra")
 
-L_18_:AddButton("Shit Talk (J)", function(L_30_arg0)
+L_21_:AddButton("Shit Talk (Home)", function(L_30_arg0)
     local plr = game.Players.LocalPlayer
 repeat wait() until plr.Character
 local char = plr.Character
 
 local garbage = {
-    "ur bad";
-    "sonney boy";
+    "this all u got";
+    "bros my son";
     "ez";
-    "my grandma has more skill than you";
+    "my dog has more skill";
     "seed";
     "sit son";
     "trash";
     "LOL";
-    "imagine being you right now";
+    "pls try";
     "xd";
     "don't try LOL";
     "you lose";
     "why do you even try";
-    "I didn't think being this bad was possible";
+    "how you miss me";
     "leave";
     "no skill";
     "so sad man.";
     "bad";
-    "you're nothing";
+    "no aim xd";
     "lol";
     "so trash";
     "so bad";
@@ -132,14 +133,14 @@ local garbage = {
     "no one likes u";
     "run 1s seed";
     "thank you for your time";
-    "you were so close!";
-    "better luck next time!";
+    "you almost had me";
+    "try harder next time";
     "rodent";
     "HAHA";
     "ill 5-0";
     "just quit";
-    "time to take out the trash";
-    "did you get worse?";
+    "bro got tossed";
+    "werent you better";
     "I'm surprised you haven't quit yet";
     "bro what you aiming at";
     "kids mad hes bad";
@@ -169,9 +170,8 @@ local garbage = {
 
 }
 
-
 function TrashTalk(inputObject, gameProcessedEvent)
-    if inputObject.KeyCode == Enum.KeyCode.J and gameProcessedEvent == false then        
+    if inputObject.KeyCode == Enum.KeyCode.Home and gameProcessedEvent == false then        
 game.ReplicatedStorage.DefaultChatSystemChatEvents.SayMessageRequest:FireServer(
         garbage[math.random(1,#garbage)],
         "All"
@@ -182,6 +182,12 @@ end
 game:GetService("UserInputService").InputBegan:connect(TrashTalk)
 end)
 
+L_21_:AddButton("Rejoin Server", function()
+	game:GetService("TeleportService"):Teleport(game.PlaceId, game.Players.LocalPlayer)
+end)
+
+L_21_:AddButton("Made By Azi")
+ 
 L_18_:AddButton("Speed (Q)", function(L_44_arg0)
 local L_45_ = game:GetService('Players').LocalPlayer
 down = true
@@ -250,42 +256,9 @@ L_18_:AddButton("Key (TP)", function(L_39_arg0)
     getgenv().game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-250.18479919434, 21.747999191284, -213.42314147949, -1, 0, 0, 0, 1, 0, 0, 0, -1)
 end)
 
-L_17_:AddSwitch("Enable ESP", function(L_46_arg0)
-	L_4_:Toggle(L_46_arg0)
-end)
-
-L_17_:AddSwitch("Enable Tracers", function(L_47_arg0)
-	L_4_.Tracers = L_47_arg0
-end)
-
-L_17_:AddSwitch("Enable Names", function(L_48_arg0)
-	L_4_.Names = L_48_arg0
-end)
-
-L_17_:AddSwitch("Enable Boxes", function(L_49_arg0)
-	L_4_.Boxes = L_49_arg0
-end)
-
 L_16_:AddSwitch("Silent Aim", function(L_50_arg0)
 	L_13_.SilentAim = L_50_arg0
 end)
-
-L_16_:AddSwitch("Aim Lock", function(L_51_arg0)
-	L_13_.AimLock = L_51_arg0
-end)
-
-L_16_:AddSwitch("Webhook Mode", function(L_52_arg0)
-	L_13_.Web = L_52_arg0
-end)
-
-L_16_:AddSwitch("Notification Mode", function(L_53_arg0)
-	L_13_.Not = L_53_arg0
-end)
-
-L_16_:AddSwitch("Copy Mode", function(L_54_arg0)
-	L_13_.Cop = L_54_arg0
-end)
-
 
 L_16_:AddSwitch("FOV Circle", function(L_55_arg0)
 	L_3_.ShowFOV = L_55_arg0
@@ -313,6 +286,22 @@ end)
 
 L_16_:AddSwitch("Hit all Airshots", function(L_59_arg0)
 	L_3_.Airshots = true
+end)
+
+L_17_:AddSwitch("Enable ESP", function(L_46_arg0)
+	L_4_:Toggle(L_46_arg0)
+end)
+
+L_17_:AddSwitch("Enable Tracers", function(L_47_arg0)
+	L_4_.Tracers = L_47_arg0
+end)
+
+L_17_:AddSwitch("Enable Names", function(L_48_arg0)
+	L_4_.Names = L_48_arg0
+end)
+
+L_17_:AddSwitch("Enable Boxes", function(L_49_arg0)
+	L_4_.Boxes = L_49_arg0
 end)
 
 function L_3_.Check()
